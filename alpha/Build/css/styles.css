@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -57,3 +61,47 @@ img {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      padding-bottom: 3%;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 651px) and (max-width: 850px) {
+    .column {
+      width: 33.33%;
+      display: flex;
+      float: left;
+      justify-content: space-around;
+      padding-bottom: 1%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
