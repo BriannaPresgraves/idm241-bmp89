@@ -10,11 +10,26 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 400px;
+    margin-top: 10%;
+}
+
+#Icon1 {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    width: 400px;
-    margin-top: 10%;
+}
+
+#Icon2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+}
+
+#Icon3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 
 @keyframes spinning {
