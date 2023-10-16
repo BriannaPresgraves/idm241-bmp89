@@ -6,17 +6,39 @@ h1 {
     text-align: center;
 }
 
-.images {
-
-}
-
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 0px;
     width: 400px;
-    margin-top: 15%;
+    margin-top: 10%;
+}
+
+@keyframes spinning {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.spin1 {
+    animation-name: spinning;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.spin2 {
+    animation-name: spinning;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.spin3 {
+    animation-name: spinning;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
