@@ -35,7 +35,6 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: 200px;
-    margin-bottom: 10%;
 }
 
 @keyframes spinning {
