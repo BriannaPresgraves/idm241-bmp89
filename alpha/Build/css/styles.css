@@ -8,6 +8,7 @@ h1 {
 
 h2 {
     text-align: center;
+    color: white;
 }
 
 img {
@@ -33,7 +34,8 @@ img {
 #Icon3 {
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 200px;
+    margin-bottom: 10%;
 }
 
 @keyframes spinning {
@@ -43,30 +45,40 @@ img {
 
 .spin1 {
     animation-name: spinning;
-    animation-duration: 40s;
+    animation-duration: 80s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .spin2 {
     animation-name: spinning;
-    animation-duration: 60s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .spin3 {
     animation-name: spinning;
-    animation-duration: 80s;
+    animation-duration: 160s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
+ul {
+    color: white;
+}
+
 .column {
     float: left;
-    width: 25%;
+    width: 20%;
+    margin-left: 3.5%;
+    line-height: 1.5;
+    background-color: black;
+    border-color: black;
+    border-radius: 30px;
+    margin-bottom: 5%;
   }
-  
+
   .row:after {
     content: "";
     display: table;
@@ -90,10 +102,8 @@ img {
 
   @media screen and (min-width: 651px) and (max-width: 850px) {
     .column {
-      width: 33.33%;
-      display: flex;
+      width: 45%;
       float: left;
-      justify-content: space-around;
       padding-bottom: 1%;
     }
 
