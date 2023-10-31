@@ -1,0 +1,120 @@
+body {
+    background-color: #ffdc09;
+}
+
+.column {
+    padding-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    margin-top: 10%;
+}
+
+#Icon1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+#Icon2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+}
+
+#Icon3 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 200px;
+}
+
+@keyframes spinning {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.spin1 {
+    animation-name: spinning;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.spin2 {
+    animation-name: spinning;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.spin3 {
+    animation-name: spinning;
+    animation-duration: 160s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+ul {
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 3.5%;
+    line-height: 1.5;
+    background-color: black;
+    border-color: black;
+    border-radius: 30px;
+    margin-bottom: 5%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      padding-bottom: 3%;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 651px) and (max-width: 850px) {
+    .column {
+      width: 45%;
+      float: left;
+      padding-bottom: 1%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
