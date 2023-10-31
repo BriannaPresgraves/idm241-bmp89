@@ -15,58 +15,6 @@ h2 {
     color: white;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    margin-top: 10%;
-}
-
-#Icon1 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-}
-
-#Icon2 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 90px;
-}
-
-#Icon3 {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 200px;
-}
-
-@keyframes spinning {
-    from { transform: rotate(0deg);}
-    to { transform: rotate(360deg);}
-}
-
-.spin1 {
-    animation-name: spinning;
-    animation-duration: 80s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.spin2 {
-    animation-name: spinning;
-    animation-duration: 100s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.spin3 {
-    animation-name: spinning;
-    animation-duration: 160s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
 ul {
     color: white;
 }
