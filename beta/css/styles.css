@@ -1,5 +1,5 @@
 body {
-    background-color: #ffdc09;
+    background-color: aliceblue;
 }
 
 .column {
@@ -12,11 +12,20 @@ h1 {
 
 h2 {
     text-align: center;
-    color: white;
+    color: black;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-bottom: 0%;
 }
 
 ul {
-    color: white;
+    color: black;
+    margin-top: 2%;
 }
 
 .column {
@@ -24,7 +33,7 @@ ul {
     width: 20%;
     margin-left: 3.5%;
     line-height: 1.5;
-    background-color: black;
+    background-color: lightgrey;
     border-color: black;
     border-radius: 30px;
     margin-bottom: 5%;
@@ -36,30 +45,127 @@ ul {
     clear: both;
   }
 
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      padding-bottom: 3%;
-    }
+  .image {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
 
-    h3 {
-        font-size: 23px;
+    margin-top: 30px;
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 260px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 664px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
     }
 
     ul {
         font-size: 14px;
     }
+
+    h2 {
+        text-align: center;
+    }
+
+    .image {
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    .one {
+        margin-left: 38px;
+        text-align: center;
+    }
+
+    .three {
+        margin-left: 36px;
+        text-align: center;
+    }
+
+    .four {
+        margin-left: 38px;
+        text-align: center;
+    }
   }
 
-  @media screen and (min-width: 651px) and (max-width: 850px) {
+  @media screen and (max-width: 580px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .image {
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .one {
+        margin-left: 38px;
+        text-align: center;
+    }
+
+    .three {
+        margin-left: 36px;
+        text-align: center;
+    }
+
+    .four {
+        margin-left: 36px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 850px) {
     .column {
       width: 45%;
       float: left;
+      height: 765px;
       padding-bottom: 1%;
     }
 
-    h3 {
-        font-size: 24px;
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 670px) and (max-width: 720px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 820px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 664px) and (max-width: 680px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 850px;
+      padding-bottom: 1%;
     }
 
     ul {
