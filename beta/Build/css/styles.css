@@ -1,0 +1,174 @@
+body {
+    background-color: aliceblue;
+}
+
+.column {
+    padding-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-bottom: 0%;
+}
+
+ul {
+    color: black;
+    margin-top: 2%;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 3.5%;
+    line-height: 1.5;
+    background-color: lightgrey;
+    border-color: black;
+    border-radius: 30px;
+    margin-bottom: 5%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .image {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+
+    margin-top: 30px;
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 260px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 664px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .image {
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    .one {
+        margin-left: 38px;
+        text-align: center;
+    }
+
+    .three {
+        margin-left: 36px;
+        text-align: center;
+    }
+
+    .four {
+        margin-left: 38px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .image {
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .one {
+        margin-left: 38px;
+        text-align: center;
+    }
+
+    .three {
+        margin-left: 36px;
+        text-align: center;
+    }
+
+    .four {
+        margin-left: 36px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 850px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 865px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 670px) and (max-width: 720px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 880px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 664px) and (max-width: 680px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 950px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
