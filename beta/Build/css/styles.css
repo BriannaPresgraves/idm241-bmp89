@@ -23,6 +23,7 @@ h2 {
 
 .title {
   text-align: left;
+  margin-top: 100px;
   margin-left: 15px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -65,26 +66,6 @@ ul {
 
 .img1 {
     width: 450px;
-}
-
-.info > div {
-    border: 4px solid #252525;
-    border-radius: 15px;
-    padding: 10px 10px; 
-    box-sizing: border-box;
-    width: 100%;
-    min-height: auto;
-}
-
-.info {
-    display: grid;
-    grid-gap: 45px;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    border: 4px solid var(--navy-blue);
-    margin: 0.5rem auto;
-    width: 75%;
-
 }
 
   .row:after {
