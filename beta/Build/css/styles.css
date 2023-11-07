@@ -15,6 +15,18 @@ h2 {
     color: black;
 }
 
+.price {
+  text-align: left;
+  padding-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+  text-align: left;
+  margin-left: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 h3 {
     text-align: left;
     color: black;
@@ -39,11 +51,137 @@ ul {
     margin-bottom: 5%;
   }
 
+  section {
+    display:flex;
+    justify-content: center;
+}
+
+.images {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+}
+
+.img1 {
+    width: 450px;
+}
+
+.info > div {
+    border: 4px solid #252525;
+    border-radius: 15px;
+    padding: 10px 10px; 
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+}
+
+.info {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    border: 4px solid var(--navy-blue);
+    margin: 0.5rem auto;
+    width: 75%;
+
+}
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
+
+.slideshow-container:hover {
+    filter: drop-shadow(0px 0px 10px);
+}
+
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  background-color: white;
+}
+
+button {
+    display: none;
+    border: none;
+    background-color: lightsteelblue;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    font-size: 16px;
+}
+
+.slideshow-container:hover button {
+    display: inline-block;
+}
+
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.Containers {
+  display: none;
+}
+
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  display: none;
+}
+
+.slideshow-container:hover .Back {
+  display: inline-block;
+}
+
+.slideshow-container:hover .forward {
+  display: inline-block;
+}
+
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
 
   @media screen and (max-width: 664px) {
     .column {
@@ -101,6 +239,7 @@ ul {
     ul {
         font-size: 15px;
     }
+
   }
 
   @media screen and (min-width: 664px) and (max-width: 680px) {
@@ -111,6 +250,30 @@ ul {
       padding-bottom: 1%;
     }
 
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 950px;
+      padding-bottom: 1%;
+    }
+
+    .slideshow-container {
+      max-width: 400px;
+      position: relative;
+      margin: auto;
+      background-color: white;
+    }
+
+    button {
+      margin-left: 127px;
+    }
+    
     ul {
         font-size: 15px;
     }
