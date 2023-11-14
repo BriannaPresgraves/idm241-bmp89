@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Beta Build</title>
+</head>
+<body>
+    <Header>
+        <h1>Beta Build</h1>
+    </Header>
+
+    <div class="slideshow-container">
+        <div class="Containers">
+          <div class="MessageInfo">1 / 3</div>
+          <img src="images/chair.jpg" style="width:100%">
+        </div>
+      
+        <div class="Containers">
+          <div class="MessageInfo">2 / 3</div>
+          <img src="images/chair2.jpg" style="width:100%">
+        </div>
+
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+
+        <button class="hide">Quick Shop</button>
+
+        <h2 class="title">Crosby Leather Chair</h2>
+        <h3 class="price">$5,375</h3>
+      </div>
+      <br>
+
+    <div class="row">
+        <div class="column">
+            <h2> Triggers </h2>
+            <ul>
+                <li>Hover on/off product information tile</li>
+                <li>Hover on/off quick shop button</li>
+                <li>Hover on/off left/right arrows</li>
+                <li>Click left/right arrows</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2> Rules </h2>
+            <h3>Hover on product info tile</h3>
+            <ul>
+                <li>Quick shop button instantly appears below product image</li>
+                <li>Left and Right arrows instantly appears on the sides of the product image</li>
+                <li>Tile becomes instantly outlined by a drop shadow</li>
+            </ul>
+            <h3>Hover off product info tile</h3>
+            <ul>
+                <li>Quick shop button, arrows, and drop shadow instantly disappear</li>
+            </ul>
+            <h3>Hover on quick shop button</h3>
+            <ul>
+                <li>Button font color changes from black to white instantly</li>
+            </ul>
+            <h3>Hover off quick shop button</h3>
+            <ul>
+                <li>Instantly, changes the font color back to black</li>
+            </ul>
+            <h3>Hover on left/right arrows</h3>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+            <h3>Hover off left/right arrows</h3>
+            <ul>
+                <li>Pointer changes back to cursor</li>
+            </ul>
+            <h3>Click left/right arrows</h3>
+            <ul>
+                <li>If the right arrow is clicked, current image slides to the left while the next image slides in from the right</li>
+                <li>If the left arrow is clicked, current image slides to the right while the next image slides in from the left</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2> Feedback </h2>
+            <h3>Hover on product info tile</h3>
+            <ul>
+                <li>Quick shop button instantly appears below product image</li>
+                <li>Left and Right arrows instantly appears on the sides of the product image</li>
+                <li>Tile becomes instantly outlined by a drop shadow</li>
+            </ul>
+            <h3>Hover off product info tile</h3>
+            <ul>
+                <li>Quick shop button, arrows, and drop shadow instantly disappear</li>
+            </ul>
+            <h3>Hover on quick shop button</h3>
+            <ul>
+                <li>Button font color changes from black to white instantly</li>
+            </ul>
+            <h3>Hover off quick shop button</h3>
+            <ul>
+                <li>Instantly, changes the font color back to black</li>
+            </ul>
+            <h3>Hover on left/right arrows</h3>
+            <ul>
+                <li>Cursor changes to pointer</li>
+            </ul>
+            <h3>Hover off left/right arrows</h3>
+            <ul>
+                <li>Pointer changes back to cursor</li>
+            </ul>
+            <h3>Click left/right arrows</h3>
+            <ul>
+                <li>If the right arrow is clicked, current image slides to the left while the next image slides in from the right</li>
+                <li>If the left arrow is clicked, current image slides to the right while the next image slides in from the left</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2> Loops and Modes </h2>
+            <h3>Loops</h3>
+            <ul>
+                <li>No loops</li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>Quick shop button and arrows appear on product information tile hover</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

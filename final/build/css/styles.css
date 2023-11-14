@@ -1,0 +1,261 @@
+body {
+    background-color: aliceblue;
+}
+
+.column {
+    padding-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+.price {
+  text-align: left;
+  padding-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title {
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-bottom: 0%;
+}
+
+ul {
+    color: black;
+    margin-top: 2%;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 3.5%;
+    line-height: 1.5;
+    background-color: lightsteelblue;
+    border-color: black;
+    border-radius: 30px;
+    margin-bottom: 5%;
+  }
+
+  section {
+    display:flex;
+    justify-content: center;
+}
+
+.images {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+}
+
+.img1 {
+    width: 450px;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.slideshow-container:hover {
+    filter: drop-shadow(0px 0px 10px);
+}
+
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  background-color: white;
+}
+
+button {
+    display: none;
+    border: none;
+    background-color: lightsteelblue;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 180px;
+    font-size: 16px;
+}
+
+.slideshow-container:hover button {
+    display: inline-block;
+}
+
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.Containers {
+  display: none;
+}
+
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  display: none;
+}
+
+.slideshow-container:hover .Back {
+  display: inline-block;
+}
+
+.slideshow-container:hover .forward {
+  display: inline-block;
+}
+
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+  @media screen and (max-width: 664px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .column {
+      width: 90%;
+      height: auto;
+      padding-bottom: 3%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 720px) and (max-width: 850px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 865px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 670px) and (max-width: 720px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 880px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+
+  }
+
+  @media screen and (min-width: 664px) and (max-width: 680px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 950px;
+      padding-bottom: 1%;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .column {
+      width: 45%;
+      float: left;
+      height: 950px;
+      padding-bottom: 1%;
+    }
+
+    .slideshow-container {
+      max-width: 400px;
+      position: relative;
+      margin: auto;
+      background-color: white;
+    }
+
+    button {
+      margin-left: 127px;
+    }
+    
+    ul {
+        font-size: 15px;
+    }
+  }
