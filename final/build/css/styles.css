@@ -107,6 +107,7 @@ ul {
 
   .Containers {
     display: none;
+    margin-bottom: 20px;
   }
 
   .Back, .forward {
@@ -150,8 +151,8 @@ ul {
   
   .title {
     text-align: left;
-    margin-top: 100px;
     margin-left: 15px;
+    margin-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
