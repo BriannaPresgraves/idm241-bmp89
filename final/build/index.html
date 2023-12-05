@@ -26,48 +26,26 @@
         <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
         <a class="forward" onclick="plusSlides(1)">&#10095;</a>
 
-        <button class="hide">Quick Shop</button>
+        <button id="myBtn" class="hide">Quick Shop </button>
 
         <h2 class="title">Crosby Leather Chair</h2>
         <h3 class="price">$5,375</h3>
       </div>
       <br>
 
-      <div id="quickshopModal" class="modal">
-        <div class="modal_content">
-          <span class="close">&times;</span>
-  
-          <div class="modal_layout">
-            <div class="modal_left">
-              <img class="modal_img" src="images/chair.jpg" alt="image 1">
-            </div>
-  
-            <div class="modal_right">
-              <h3 class="product_name_modal">Crosby Leather Chair</h3>
-              <p class="product_desc_modal">$5,375</p>
-              <p class="product_color_modal">color: black</p>
-                <div class="product_colors">
-                  <div class="black_color"></div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-main">
+                <div class="modal-img">
+                  <img src="images/chair.jpg" style="width:100%">
                 </div>
-              <p class="product_size_modal">Size</p>
-                <div class="sizes">
-                  <div class="size">6</div>
-                  <div class="size">7</div>
-                  <div class="size">8</div>
-                  <div class="size">9</div>
-                  <div class="size">10</div>
-                  <div class="size">11</div>
-                </div>
-            
-              <div class="modal_buttons">
-                <div class="sizeWarning" style="display: none;">Please select a size before adding to cart</div>
-                <button class="addToCart">ADD TO CART</button>
-                <button class="viewDetail">VIEW FULL DETAILS</button>
+        
+                <h2 class="title">Crosby Leather Chair</h2>
+                <h3 class="price">$5,375</h3>
               </div>
-            </div>
-          </div>
-          
         </div>
+      </div>
   
     <div class="row">
         <div class="column">
@@ -159,6 +137,7 @@
             </ul>
             <h3>Hover off modal exit button</h3>
             <ul>
+                <li>X Buttone fades to black</li>
                 <li>Pointer changes back to cursor</li>
             </ul>
             <h3>Click modal exit button</h3>

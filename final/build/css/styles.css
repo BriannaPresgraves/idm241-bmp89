@@ -75,6 +75,9 @@ ul {
 
   .slideshow-container:hover {
     filter: drop-shadow(0px 0px 10px);
+      transition: 0.5s all ease-in-out;
+      -moz-transition: 0.5s all ease-in-out;
+      -webkit-transition: 0.5s all ease-in-out;
   }
 
   .slideshow-container {
@@ -94,15 +97,24 @@ ul {
     text-decoration: none;
     margin-left: 180px;
     font-size: 16px;
+    transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
   }
 
   .slideshow-container:hover button {
     display: inline-block;
+    transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
   }
 
   button:hover {
     color: white;
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
   }
 
   .Containers {
@@ -164,178 +176,31 @@ ul {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: background-color 0.6s ease-in-out; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
   }
-  
-  .modal_content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 2rem;
-    margin: 2rem;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
   }
-  
+
   .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    margin: 1rem;
-    cursor: pointer;
-    color: var(--color-text);
-    transition: color 0.6s ease-in-out; 
-  }  
-
-  .close:hover {
-    color: var(--color-pink);
-    cursor: pointer;
-  } 
-
-  .modal_layout {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: row;
-  }
-
-  .modal_left {
-    padding: .5rem;
-    margin: .5rem;
-  }
-
-  .modal_img {
-    min-width: 100%;
-    height: auto;
-  }
-
-  .modal_right {
-    padding: .5rem;
-    margin: .5rem;
-  }
-
-  .product_name_modal {
-    font-size: 1rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  .product_desc_modal {
-    font-size: 1rem;
-    color: var(--color-text);
-  }
-
- .product_size_modal, .product_color_modal {
-    font-size: .75rem;
-    color: var(--color-text);
-  }
-
-  .product_color_modal, .product_size_modal {
-    padding: .5rem .5rem 0rem .5rem;
-    margin: .5rem .5rem 0rem .5rem;
-  }
-
-  .product_colors {
-    display: flex;
-    flex-direction: row;
-    padding: 0rem .5rem .5rem .5rem;
-  }
-
-  .black_color {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: black;
-    border-radius: 50%;
-    margin: 0.5rem;
-}
-
-.sizes {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-family: "Karla";
-    font-size: .75rem;
-    color: var(--color-text);
-    margin: 0rem .5rem .5rem .5rem;
-    padding: 0rem .5rem .5rem .5rem;
-  }
-
-  .size {
-    margin: .25rem;
-    padding: 1rem;
-    border: .5px solid var(--color-text);
-    transition: 0.2s ease-in-out 0.2s;
-  }
-
-  .size:hover {
-    color: var(--color-pink);
-    background-color: var(--color-screen);
-    border: .5px solid var(--color-pink);
-    transition: 0.2s ease-in-out 0.2s;
-    cursor: pointer;
-  }
-
-  .size.selected {
-    border: .5px solid var(--color-pink); 
-    color: var(--color-pink); 
-    background-color: var(--color-screen); 
-  }
-
-  .modal_buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .addToCart, .viewDetail {
-    font-family: "karla";
-    font-size: .75rem;
-    letter-spacing: 2px;
-    color: var(--color-screen);
-    margin: 0.5rem;
-    padding: 1rem;
-    width: 20rem;
-    background-color: var(--color-pink);
-    border: 1px solid var(--color-pink);
-    transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;;
-  }
-
-  .addToCart.active {
-    opacity: 0.75; 
-    pointer-events: none; 
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
   }
   
-
-  .addToCart:hover, 
-  .addToCart.active:hover {
-    color: var(--color-pink);
-    background-color: var(--color-screen);
-    border: 1px solid var(--color-pink);
-    transition:  0.5s ease-in-out 0.5s;
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    opacity: 1;
-  }
-
-  .viewDetail:hover {
-    color: var(--color-pink);
-    background-color: var(--color-screen);
-    border: 1px solid var(--color-pink);
-    transition: 0.3s ease-in-out 0.3s;
-  }
-
-  .sizeWarning {
-    display: none;
-    font-family: 'Karla', sans-serif;
-    font-size: .75rem;
-    color: red;
-    margin-top: .5rem;
-    transition: opacity 0.5s ease-in-out; 
   }
 
   @media screen and (max-width: 780px) {
