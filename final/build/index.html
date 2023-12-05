@@ -36,14 +36,23 @@
       <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div class="modal-main">
+            <div class="modal-layout">
+            <div class="modalleft">
                 <div class="modal-img">
                   <img src="images/chair.jpg" style="width:100%">
                 </div>
-        
-                <h2 class="title">Crosby Leather Chair</h2>
-                <h3 class="price">$5,375</h3>
+            <div class="modalright";
+              <h2 class="modaltitle">Crosby Leather Chair</h2>
+                <h3 class="modalprice">$5,375</h3>
               </div>
+              <div class="counter">
+                <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                <input type="text" value="1">
+                <span class="up" onClick='increaseCount(event, this)'>+</span>
+              </div>
+              <div class="favorite" id="favoritesButton" data-favorite="false">&hearts;</div>
+              <button class="addToCart">ADD TO CART</button>
+            </div>
         </div>
       </div>
   
@@ -137,7 +146,7 @@
             </ul>
             <h3>Hover off modal exit button</h3>
             <ul>
-                <li>X Buttone fades to black</li>
+                <li>X Button fades to black</li>
                 <li>Pointer changes back to cursor</li>
             </ul>
             <h3>Click modal exit button</h3>
@@ -218,6 +227,7 @@
             </ul>
             <h3>Hover off modal exit button</h3>
             <ul>
+                <li>X Button fades to black</li>
                 <li>Pointer changes back to cursor</li>
             </ul>
             <h3>Click modal exit button</h3>
